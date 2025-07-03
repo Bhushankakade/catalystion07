@@ -177,3 +177,14 @@ header {
   padding: 0.5rem;
   font-size: 1rem;
 }
+
+@media (max-width: 500px) {
+  .navbar {
+    justify-content: center;
+    margin-right: 2.8rem;
+  }
+
+  .navbar img {
+    width: 18rem;
+  }
+}
