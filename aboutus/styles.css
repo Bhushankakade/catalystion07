@@ -31,13 +31,17 @@ body {
 
 .left__content {
   width: 50%;
+  min-height: 10rem;
   padding: 2rem;
   margin-left: 5rem;
   text-align: justify;
+  background-color: rgb(89, 184, 191, 0.1);
+  border-radius: 12px;
 }
 
 .left__content h1 {
   color: #1a3a72;
+  margin-bottom: 1rem;
 }
 
 .right_content {
