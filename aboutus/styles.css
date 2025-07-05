@@ -8,6 +8,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.aboutus {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1a3a72;
+}
+
+.aboutus p span {
+  color: #2dbe60;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -18,6 +30,10 @@ body {
   width: 50%;
   padding: 2rem;
   margin-left: 5rem;
+}
+
+.left__content h1 {
+  color: #1a3a72;
 }
 
 .right_content {
@@ -48,6 +64,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .aboutus {
+    font-size: 1.5rem;
+  }
   .left__content {
     font-size: 0.7rem;
   }
@@ -59,6 +78,9 @@ body {
 }
 
 @media (max-width: 478px) {
+  .aboutus {
+    font-size: 1.3rem;
+  }
   .left__content {
     font-size: 0.4rem;
   }
