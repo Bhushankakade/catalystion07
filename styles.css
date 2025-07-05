@@ -149,6 +149,9 @@ header {
 }
 
 @media (max-width: 1130px) {
+  header {
+    background-position: 0 50%;
+  }
   .chemical-intro {
     font-size: 1.5rem;
     margin-top: 2rem;
