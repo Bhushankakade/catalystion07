@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Material+Icons+Outlined"
+        rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #1a3a72;
+            --bright-green: #2dbe60;
+            --light-blue: #5a7dad;
+            --soft-green: #a4d6a7;
+            --white: #ffffff;
+            --light-gray: #f4f4f8;
+            --dark-gray: #333333;
+            --medium-gray: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 80px 10%;
+            background-color: var(--white);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h2 {
+            font-size: 2.8rem;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: var(--medium-gray);
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: var(--medium-gray);
+        }
+
+        .info-item i {
+            font-family: 'Material Icons Outlined';
+            font-size: 24px;
+            margin-right: 12px;
+            color: var(--bright-green);
+        }
+
+        form {
+            background: var(--light-blue);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        form h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: var(--bright-green);
+            color: var(--white);
+            padding: 14px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #26a14d;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                padding: 60px 5%;
+            }
+
+            form {
+                padding: 30px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have questions, ideas, or just want to say hello? We’d love to hear from you!</p>
+
+            <div class="info-item"><i>mail</i>contact@yourdomain.com</div>
+            <div class="info-item"><i>call</i>+91 9876543210</div>
+            <div class="info-item"><i>location_on</i>Mumbai, Maharashtra, India</div>
+        </div>
+
+        <form>
+            <h3>Send a Message</h3>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
