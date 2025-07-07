@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: ;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* navbar */
@@ -84,22 +83,38 @@ ul.list li a:hover {
     padding: 1rem 1.5rem;
   }
   .list {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* ⬅ fixes the layout shift */
+    top: 80px;
+    right: 0;
+    width: 100vw;
+    height: auto;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    top: 100%;
-    right: 0px;
-    width: 100%;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    transform: translateX(100%); /* Ensure it's fully off-screen */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-    overflow-x: hidden;
+
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .navbar .list li a {
+    display: block;
+    padding: 0.5rem;  
+  }
+
+  .navbar .list li a:hover {
+    background-color: #2dbe60;
+    color: #fff;
   }
 
   .menu-icon {
@@ -109,7 +124,10 @@ ul.list li a:hover {
     cursor: pointer;
   }
   .list.open {
-    transform: translateX(0); /* Slide in the menu */
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 
