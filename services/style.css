@@ -36,7 +36,7 @@ body {
   justify-content: space-around;
   gap: 1rem;
   margin-bottom: 40px;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .stat-item {
@@ -93,7 +93,7 @@ body {
   }
 
   .statistics-section h2 {
-    font-size: 1.6em; /* Smaller heading on mobile */
+    font-size: 1.6em;
   }
 
   .stat-item .stat-number {
@@ -101,14 +101,14 @@ body {
   }
 
   .statistics-section p {
-    font-size: 1em; /* Smaller paragraph on mobile */
+    font-size: 1em;
   }
   .stat-item i {
     font-size: 1.6rem;
   }
   .cta-button {
-    width: 100%; /* Full width for the button */
-    padding: 15px; /* Adjust padding */
+    width: 100%;
+    padding: 15px;
   }
 }
 
@@ -119,5 +119,60 @@ body {
 
   .statistics-section p {
     font-size: 1em;
+  }
+}
+
+/* findandjoin__chanlleges */
+.findandjoin__challenges {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.find_the_best_challenges {
+  color: #2dbe60;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.join__challenges {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .find_the_best_challenges {
+    font-size: 1.3rem;
+  }
+
+  .join__challenges {
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 900px) {
+  .find_the_best_challenges {
+    font-size: 1rem;
+  }
+
+  .join__challenges {
+    color: #333;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
   }
 }
