@@ -176,3 +176,165 @@ body {
     letter-spacing: 1px;
   }
 }
+
+/* why choose catalyst  */
+
+#why-choose-catalystion {
+  background: linear-gradient(to bottom right, #f4f4f8, #e0e8f9);
+  padding: 50px 0;
+  margin-top: 1rem;
+}
+
+.why-choose-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#why-choose-catalystion h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin: 1rem;
+}
+
+.benefit-item:hover {
+  transform: scale(1.05);
+}
+
+.benefit-item .benefit-icon {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  color: #2dbe60;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+.benefit-item {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.benefit-item.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fas {
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  #why-choose-catalystion h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 0.8rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 1rem;
+    color: #2dbe60;
+    margin-bottom: 10px;
+  }
+
+  .benefit-item .benefit-icon {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .benefit-item p {
+    font-size: 0.7rem;
+    color: #7f8c8d;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 700px) {
+  #why-choose-catalystion h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 0.6rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 0.9rem;
+    color: #2dbe60;
+    margin-bottom: 10px;
+  }
+
+  .benefit-item .benefit-icon {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .benefit-item p {
+    font-size: 0.6rem;
+    color: #7f8c8d;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 500px) {
+  #why-choose-catalystion h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-description {
+    font-size: 0.6rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 0.9rem;
+    color: #2dbe60;
+    margin-bottom: 10px;
+  }
+
+  .benefit-item .benefit-icon {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .benefit-item p {
+    font-size: 0.6rem;
+    color: #7f8c8d;
+    line-height: 1.4;
+  }
+}

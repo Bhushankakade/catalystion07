@@ -30,3 +30,22 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(statsSection);
+
+// why choose us
+const benefitItems = document.querySelectorAll(".benefit-item");
+
+const benefitObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        benefitObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+benefitItems.forEach((item) => {
+  benefitObserver.observe(item);
+});
