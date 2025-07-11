@@ -182,3 +182,174 @@ body {
     margin-top: 15px;
   }
 }
+
+/* core values */
+.core_values {
+  margin: 2.5rem 13rem;
+}
+.section-title_core_values {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title_core_values hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #999;
+}
+
+.section-title_core_values span {
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1a3a72;
+}
+
+.info-section_wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.info-section {
+  background-color: #f0fff4;
+  width: 50%;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 0.8rem;
+  min-height: 180px;
+}
+
+.info-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icon-text img {
+  width: 5rem;
+  mix-blend-mode: darken;
+}
+
+.info-icon-text p {
+  color: #1a3a72;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.info-description {
+  font-size: 1.1rem;
+  color: #2e3b2e;
+}
+
+@media (max-width: 1252px) {
+  .core_values {
+    margin: 2.5rem 9.5rem;
+  }
+
+  .section-title_core_values span {
+    font-size: 1.8rem;
+  }
+
+  .info-section {
+    padding: 1.3rem;
+  }
+
+  .info-icon-text img {
+    width: 4.5rem;
+  }
+
+  .info-icon-text p {
+    font-size: 1.3rem;
+  }
+
+  .info-description {
+    font-size: 1rem;
+    color: #2e3b2e;
+  }
+}
+
+@media (max-width: 900px) {
+  .core_values {
+    margin: 2.5rem 5rem;
+  }
+
+  .section-title_core_values span {
+    font-size: 1.6rem;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+
+  .info-icon-text img {
+    width: 3.5rem;
+  }
+
+  .info-icon-text p {
+    font-size: 1.1rem;
+  }
+
+  .info-description {
+    font-size: 0.8rem;
+    color: #2e3b2e;
+  }
+}
+
+@media (max-width: 700px) {
+  .core_values {
+    margin: 2.5rem 4rem;
+  }
+
+  .section-title_core_values span {
+    font-size: 1.5rem;
+  }
+
+  .info-section {
+    padding: 0.9rem;
+  }
+
+  .info-icon-text img {
+    width: 3.2rem;
+  }
+
+  .info-icon-text p {
+    font-size: 1rem;
+  }
+
+  .info-description {
+    font-size: 0.7rem;
+    color: #2e3b2e;
+  }
+}
+
+@media (max-width: 700px) {
+  .core_values {
+    margin: 2.5rem 2rem;
+  }
+
+  .section-title_core_values span {
+    font-size: 1.5rem;
+  }
+
+  .info-section_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-icon-text img {
+    width: 3.1rem;
+  }
+
+  .info-icon-text p {
+    font-size: 0.9rem;
+  }
+
+  .info-description {
+    font-size: 0.6rem;
+    color: #2e3b2e;
+  }
+}
