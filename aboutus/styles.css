@@ -8,11 +8,124 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin-top: -20px;
+  padding: 3rem 1.5rem;
+}
+
+.navbar img {
+  mix-blend-mode: multiply;
+  width: 20rem;
+  position: relative;
+  top: 1rem;
+}
+
+.navbar .nav__links {
+  display: flex;
+}
+
+.nav__links li {
+  list-style: none;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  color: #1a3a72;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.nav__links li a:hover {
+  background-color: #2dbe60;
+  color: #fff;
+}
+.icons i {
+  font-size: 1.8rem;
+  color: #1a3a72;
+  cursor: pointer;
+  width: 1.7rem;
+  height: 2rem;
+  margin-top: 2rem;
+}
+
+.icons {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar img {
+    width: 18rem;
+  }
+
+  .navbar .nav__links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .nav__links li {
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .nav__links li a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  .icons {
+    display: block;
+  }
+
+  .icons .croos_icon {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    justify-content: space-between;
+    margin-right: 2.8rem;
+  }
+
+  .navbar img {
+    width: 15rem;
+  }
+
+  .icons i {
+    font-size: 1.7rem;
+    margin-top: 38px;
+  }
+}
+
 .aboutus {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
   background-color: rgba(203, 234, 255, 0.422);
   padding: 1rem;
 }
