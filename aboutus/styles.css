@@ -8,110 +8,90 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.logo img {
-  width: 20rem;
-  margin-top: 1rem;
-}
-
 .aboutus {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1a3a72;
-  position: relative;
-  bottom: 1rem;
-}
-
-.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: -1rem;
+  margin-top: 3rem;
 }
 
-.left__content {
-  width: 50%;
-  min-height: 10rem;
-  padding: 2rem;
-  margin-left: 5rem;
-  text-align: justify;
-  background-color: rgb(89, 184, 191, 0.1);
-  border-radius: 12px;
+.aboutus__info {
+  width: 40%;
 }
 
-.left__content h1 {
-  color: #1a3a72;
+.aboutus__info h1 {
   margin-bottom: 1rem;
+  color: #1a3a72;
 }
 
-.right_content {
-  width: 50%;
+.aboutus__info p {
+  text-align: justify;
 }
 
-.right_content img {
-  width: 25rem;
-  height: 25rem;
-  padding: 2rem;
+.aboutus img {
+  width: 20rem;
+  height: 20rem;
 }
 
-@media (max-width: 900px) {
-  .logo img {
-    width: 18rem;
+@media (max-width: 700px) {
+  .aboutus__info {
+    width: 40%;
+  }
+
+  .aboutus__info h1 {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
-  .container {
-    padding: 1rem;
-  }
-
-  .left__content {
-    padding: 1rem;
-    margin-left: 1rem;
+  .aboutus__info p {
+    text-align: justify;
     font-size: 0.8rem;
   }
 
-  .right_content img {
-    width: 20rem;
-    height: 20rem;
+  .aboutus img {
+    width: 15rem;
+    height: 15rem;
   }
 }
 
-@media (max-width: 600px) {
-  .logo img {
-    width: 15rem;
+@media (max-width: 550px) {
+  .aboutus__info {
+    width: 40%;
+  }
+
+  .aboutus__info h1 {
     margin-bottom: 1rem;
+    font-size: 1.3rem;
   }
-  .aboutus {
-    font-size: 1.5rem;
-    margin-top: 0.8rem;
-  }
-  .left__content {
+
+  .aboutus__info p {
+    text-align: justify;
     font-size: 0.7rem;
   }
 
-  .right_content img {
-    width: 18rem;
-    height: 18rem;
+  .aboutus img {
+    width: 12rem;
+    height: 12rem;
   }
 }
 
-@media (max-width: 478px) {
-  .logo img {
-    width: 13rem;
-    margin-bottom: 1rem;
-  }
-  .aboutus {
-    font-size: 1.3rem;
-  }
-  .container {
-    margin-top: -1.5rem;
-  }
-  .left__content {
-    font-size: 0.4rem;
+@media (max-width: 450px) {
+  .aboutus__info {
+    width: 40%;
   }
 
-  .right_content img {
-    width: 12rem;
-    height: 12rem;
+  .aboutus__info h1 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .aboutus__info p {
+    text-align: justify;
+    font-size: 0.6rem;
+  }
+
+  .aboutus img {
+    width: 10rem;
+    height: 10rem;
   }
 }
