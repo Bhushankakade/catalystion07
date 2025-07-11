@@ -10,9 +10,11 @@ body {
 
 .aboutus {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 3rem;
+  background-color: rgba(203, 234, 255, 0.422);
+  padding: 1rem;
 }
 
 .aboutus__info {
@@ -22,10 +24,12 @@ body {
 .aboutus__info h1 {
   margin-bottom: 1rem;
   color: #1a3a72;
+  text-align: center;
 }
 
 .aboutus__info p {
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 .aboutus img {
@@ -51,6 +55,7 @@ body {
   .aboutus img {
     width: 15rem;
     height: 15rem;
+    margin-top: 2rem;
   }
 }
 
