@@ -38,12 +38,8 @@ body {
 }
 
 @media (max-width: 700px) {
-  .aboutus__info {
-    width: 40%;
-  }
-
   .aboutus__info h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
   }
 
@@ -60,12 +56,8 @@ body {
 }
 
 @media (max-width: 550px) {
-  .aboutus__info {
-    width: 40%;
-  }
-
   .aboutus__info h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
   }
 
@@ -81,12 +73,11 @@ body {
 }
 
 @media (max-width: 450px) {
-  .aboutus__info {
-    width: 40%;
+  .aboutus {
+    gap: 1rem;
   }
-
   .aboutus__info h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
   }
 
