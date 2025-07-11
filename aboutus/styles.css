@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    background-color: rgb(250, 247, 247);
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
@@ -454,7 +454,36 @@ body {
   }
 
   .info-icon-text img {
-    width: 3.1rem;
+    width: 2.5rem;
+  }
+
+  .info-icon-text p {
+    font-size: 0.9rem;
+  }
+
+  .info-description {
+    font-size: 0.6rem;
+    color: #2e3b2e;
+  }
+}
+
+@media (max-width: 500px) {
+  .core_values {
+    margin: 2.5rem 2rem;
+  }
+
+  .section-title_core_values span {
+    font-size: 1.3rem;
+  }
+
+  .info-section_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-icon-text img {
+    width: 2.5rem;
   }
 
   .info-icon-text p {
