@@ -338,12 +338,11 @@ body {
 .info-icon-text {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .info-icon-text img {
-  width: 5rem;
-  mix-blend-mode: darken;
+  width: 4rem;
+  mix-blend-mode: multiply;
 }
 
 .info-icon-text p {
@@ -493,5 +492,139 @@ body {
   .info-description {
     font-size: 0.6rem;
     color: #2e3b2e;
+  }
+}
+
+/* What we offer */
+.whatweoffer {
+  margin: 4rem 0;
+}
+.section-title_whatweoffer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title_whatweoffer hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #999;
+}
+
+.section-title_whatweoffer span {
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1a3a72;
+}
+
+.offer-card .offer-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.offer-card .offer-icon-text img {
+  width: 4rem;
+}
+
+.offer-icon-text p {
+  font-size: 1.5rem;
+  color: #1a3a72;
+  font-weight: 500;
+}
+
+.offer-card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1252px) {
+  .whatweoffer {
+    margin: 3rem 0;
+  }
+
+  .section-title_whatweoffer span {
+    font-size: 1.8rem;
+  }
+
+  .offer-card .offer-icon-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .offer-card .offer-icon-text img {
+    width: 3rem;
+  }
+
+  .offer-icon-text p {
+    font-size: 1.3rem;
+  }
+
+  .offer-card-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .offer-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .whatweoffer {
+    margin: 3rem 0;
+  }
+
+  .section-title_whatweoffer span {
+    font-size: 1.6rem;
+  }
+
+  .offer-card .offer-icon-text img {
+    width: 2.5rem;
+  }
+
+  .offer-icon-text p {
+    font-size: 1.2rem;
+  }
+
+  .offer-card-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .offer-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-title_whatweoffer span {
+    font-size: 1.5rem;
+  }
+
+  .offer-card .offer-icon-text img {
+    width: 2rem;
+  }
+
+  .offer-icon-text p {
+    font-size: 1rem;
+  }
+
+  .offer-description {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .offer-card-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-direction: column;
   }
 }
