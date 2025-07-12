@@ -338,6 +338,7 @@ body {
 .info-icon-text {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .info-icon-text img {
