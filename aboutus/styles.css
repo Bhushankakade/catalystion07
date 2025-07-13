@@ -660,3 +660,9 @@ body {
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 400px) {
+  .map h1 {
+    font-size: 1.4rem;
+  }
+}
